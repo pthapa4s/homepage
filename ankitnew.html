@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+}
+    nav{
+        height:60px;
+        width:100%;
+        background-color:black;
+        position: sticky;
+        top:0;
+    }
+    .fa-facebook {
+        background: #3B5998;
+        color: white;
+        padding:5px;
+    }
+    .fa {
+        font-size: 20px;
+        width: 40px;
+        text-align: center;
+        text-decoration: none;
+}
+    ul{
+        color:white;
+        display:inline-block;
+        justify-content:space-around;
+        font-style:'Oswald', sans-serif;
+        font-size:20px;
+        padding: 20px;
+        position:sticky;
+        top:0;
+    }
+    #picture{
+        background-image:url("https://images.pexels.com/photos/572056/pexels-photo-572056.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #container{
+        margin-left:100px;
+        margin-right:50px;
+
+    }
+    #aboutme{
+        height:200px;
+        width:950px;
+        background-color:rgb(173, 207, 226);
+        border-radius:15px;
+        box-align:center;
+        margin-top:50px;
+    }
+    .head, form{
+        padding:20px 50px 10px 50px;
+        color:black;
+        font-size:x-large;
+        
+    }
+    p{
+        padding:3px 50px 5px 50px;
+        color:white;
+        font-family: 'Barlow', sans-serif;
+    }
+    #myoffers{
+        height:400px;
+        width:950px;
+        background-color:rgb(173, 207, 226);
+        border-radius:15px;
+        box-align:center;
+        margin-top:50px;
+    }
+    .subhead{
+        color:black;
+        font-size:large;
+        font-family: 'Barlow', sans-serif;
+    }
+    li{
+        color:white;
+        font-family: 'Barlow', sans-serif;
+    }
+    .subhead, li{
+        padding:5px 50px 5px 50px;
+    }
+    #contactbox{
+        margin-top:50px;
+        margin-bottom:50px;
+        height:400px;
+        width:950px;
+        background-color:rgb(173, 207, 226);
+        border-radius:15px;
+        
+    }
+    .mail{
+        margin-left:40px;
+    }
+    .message{
+        margin-left:20px;
+    }
+    .form-group{
+        color:white;
+        font-style: 'Barlow', sans-serif;
+        font-size:large;
+        padding-top:10px;
+    }
+    #bottom{
+        height:40px;
+        width:100%;
+        background-color:black;
+    }
+
+
+</style>
+
+<body>
+    <div id="top">
+        <nav>
+            <ul>Ankit Basnet</ul>
+            <ul>Home</ul>
+            <ul>About</ul>
+            <ul>Services</ul>
+            <ul>Contact</ul>
+            <ul class="socialfacebook"><a href="https://www.facebook.com/ankit.mansinghbasnet"><i class="fa fa-facebook"></i></a></ul>
+            
+        </nav>
+    </div>
+    <div id="picture">
+        <img src="https://images.pexels.com/photos/572056/pexels-photo-572056.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="">
+    </div>
+
+    <div id="container">
+        <div id="aboutme" >
+            <h1 class="head">A little bit about myself</h1>
+            <p>My name is Ankit Basnet. I am 21 yrs old. I live in Koteshwor, Kathmandu. I completed my SLC from Grammar Public School at Koteshwor and +2 from Little Angels College, Hattiban.
+                I love to travel, play football and play guitar as well. Currently I am pursuing my Bachelors level in Information Technology at ISlington College.
+                In near future, I want to become a successful Software Developer. This portfolio is a testimony of my embarkment of a new journey to become a software devleoper.</p>
+     
+        </div>
+
+        <div id="myoffers">
+            <h2 class="head">Here is what I have to offer</h2>
+            <h class="subhead">Modern Websites</h>
+            <li>Modern Layout design</li>
+            <li>Responsive Website Design</li>
+            <li>Search Engine Optimization</li>
+            <li>Browser Compatibility</li>
+            <br>
+
+            <h class="subhead">Free Hosting and Maintainance</h>
+            <li>Free Domain Name</li>
+            <li>Free Hosting</li>
+            <li>Free SSL certification</li>
+            <li>Personal Assistance</li>
+        </div>
+
+            <div id="contactbox">
+                    <h3 class="head"> Get your killer Website now!!</h3>
+                    <form>
+                        <h> Shoot me a Message <i class="fa fa-envelope"></i></h>
+                        <br>
+                        <div class="form-group" >
+                            <label for="first-name">First Name</label>
+                            <input type="text" placeholder="Enter your First Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" placeholder="Enter your Last  Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" >Email</label>
+                            <input type="email" placeholder="Enter your Email" class="mail">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea rows="7" placeholder="Enter your message" class="message"></textarea>
+                        </div>
+                        <input type="submit" value="Send Message" class="contact-btn">
+                    </form>
+            </div>     
+        </div>
+</body>
+<footer>
+    <div id="bottom">
+    <p> &copy; Ankit Basnet</p>
+    </div>
+</footer>
+</html>
